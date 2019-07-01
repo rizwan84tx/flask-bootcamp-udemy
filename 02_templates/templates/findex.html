@@ -1,0 +1,12 @@
+{% extends 'fbase.html' %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to FORM basics</h1>
+  <hr class="my-4">
+  <p>You may signup by clicking below button</p>
+  <a class="btn btn-primary btn-lg" href="{{ url_for('signup')}}" role="button">Sign Up</a>
+</div>
+
+{% endblock %}

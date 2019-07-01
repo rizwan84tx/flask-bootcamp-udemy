@@ -1,0 +1,12 @@
+{% extends 'ibase.html' %}
+
+{% block content %}
+
+<h2>Welcome {{user}}</h2>
+<h2> Upper case: {{user|upper}}</h2>
+<h2> Lower case: {{user|lower}}</h2>
+<h2> Capitalize: {{user|capitalize}}</h2>
+<h2> Title: {{user|title}}</h2>
+<a href="{{ url_for('static',filename='riz.jpg')}}">View PIC</a>
+
+{% endblock %}
