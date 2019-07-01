@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Template Control Flow</title>
+  </head>
+  <body>
+    <h1>Template - Control Flow</h1>
+
+    <ul>
+      {% for dino in user %}
+        <li>{{dino}}</li>
+      {% endfor %}
+    </ul>
+
+    {% if 'T-REX' in user %}
+      <p>Alert!! Predator Found!</p>
+    {% else %}
+      <p>Relax - No Predators</p>
+    {% endif %}
+
+  </body>
+</html>
