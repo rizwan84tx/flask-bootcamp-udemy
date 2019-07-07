@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Basics</title>
+  </head>
+  <body>
+    <h1>
+      <p>
+        {% if user_name %}
+          You have entered name as: {{ user_name }}
+          You may change or update below.
+        {% else %}
+          What is Your Name:
+        {% endif %}
+      </p>
+    </h1>
+
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      {{ form.user_name.label }} {{ form.user_name() }}
+      {{ form.submit() }}
+    </form>
+  </body>
+</html>

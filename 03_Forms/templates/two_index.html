@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Fields</title>
+  </head>
+  <body>
+    <h1> Welcome to Our Survey</h1>
+    <form method="post">
+      {{ form.hidden_tag() }}
+      {{ form.name.label }} {{ form.name() }}
+      <br><br>
+      {{ form.senior.label }} {{ form.senior() }}
+      <br><br>
+      Your Martial Status: {{ form.martial() }}
+      <br><br>
+      Your Food Preference: {{ form.food_choice() }}
+      <br><br>
+      Any Other Feedback?
+      {{ form.feedback() }}
+      <br><br><br>
+      {{ form.submit() }}
+
+    </form>
+  </body>
+</html>
