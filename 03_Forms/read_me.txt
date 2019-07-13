@@ -24,4 +24,4 @@
 ------ EXCERCISE-THREE ------
 -----------------------------
 #Flash
-1. When we import flash and pass an element; it Return the information as 'get_flashed_messages'
+1. When we import flash and pass an element; it Return the information as 'get_flashed_messages()'
