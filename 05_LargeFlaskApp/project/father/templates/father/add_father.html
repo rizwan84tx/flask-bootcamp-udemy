@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Register Child's Father</h1>
+  <form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name() }}<br>
+    {{ form.child_id.label }} {{ form.child_id() }}<br>
+    {{ form.submit() }}
+  </form>
+</div>
+{% endblock %}
